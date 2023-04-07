@@ -42,12 +42,12 @@ from io import StringIO
 import pandas as pd
 import requests
 
-url = "https://drive.google.com/file/d/1-FuA4hHpyvghqeF2r0sBhJDJSwwWepvM/view?usp=sharing"
-path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
-storage_options = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'}
-data = pd.read_csv(path, storage_options=storage_options)
+# url = "https://drive.google.com/file/d/1-FuA4hHpyvghqeF2r0sBhJDJSwwWepvM/view?usp=sharing"
+# path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+# storage_options = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'}
+# data = pd.read_csv(path, storage_options=storage_options)
 
-# data = pd.read_csv("output_final.csv")
+data = pd.read_csv("output_final.csv")
 data = data.dropna()
 
 today = datetime.now().strftime("%m-%d")
